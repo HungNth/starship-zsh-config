@@ -1,6 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Increase filesystem scan timeout (default is 30ms)
 scan_timeout = 120
 
 format = """
@@ -25,9 +24,7 @@ $haskell\
 $python\
 [](fg:green bg:sapphire)\
 $conda\
-[](fg:sapphire bg:lavender)\
-$time\
-[ ](fg:lavender)\
+[ ](fg:sapphire)\
 $cmd_duration\
 $line_break\
 $character"""
@@ -150,7 +147,7 @@ format = '[$symbol$environment ]($style)'
 ignore_base = false
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R"
 style = "bg:lavender"
 format = '[[  $time ](fg:crust bg:lavender)]($style)'
@@ -260,6 +257,7 @@ mantle = "#e6e9ef"
 crust = "#dce0e8"
 
 [palettes.catppuccin_macchiato]
+
 rosewater = "#f4dbd6"
 flamingo = "#f0c6c6"
 pink = "#f5bde6"
